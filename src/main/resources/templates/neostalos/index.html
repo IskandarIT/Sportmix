@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>product index</title>
+    <link rel='stylesheet' href='/webjars/bootstrap/3.3.6/css/bootstrap.min.css'>
+</head>
+<a th:href="@{/}" class="btn btn-success btn-xs">Главный</a>
+<body>
+<h1>Список не оставшихся продуктов!!</h1>
+<p>
+</p>
+<div class="container">
+    <div class="rows">
+             <table class="table">
+                <tr>
+                    <td>Name</td>
+                    <td>Price</td>
+
+                    <td></td>
+                </tr>
+                <tr th:each="prod : ${prods}">
+                    <div th:if="${prod.nalichie}==false">
+                    <td th:text="${prod.name}">Onions</td>
+                    <td th:text="${prod.price}">2.41</td>
+                    <td th:text="${prod.kolvo}">2.41</td>
+
+                    </div>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

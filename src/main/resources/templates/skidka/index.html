@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>order index</title>
+    <link rel='stylesheet' href='/webjars/bootstrap/3.3.6/css/bootstrap.min.css'>
+</head>
+<a th:href="@{/}" class="btn btn-success btn-xs">Главный</a>
+<body>
+<h1>История заказов!!</h1>
+<p>
+</p>
+<div class="container">
+    <div class="rows">
+        <table class="table">
+            <tr>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Kolichestvo</td>
+                <td>Skidka</td>
+
+
+            </tr>
+            <tr th:each="prod : ${product}">
+                <div th:if="${prod.skidka}!=0">
+                <td th:text="${prod.name}">Onions</td>
+                <td th:text="${prod.price}">2.41</td>
+                <td th:text="${prod.kolvo}">2.41</td>
+                    <td th:text="${prod.skidka}">2.41</td>
+                    
+                    
+                
+
+                </div>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

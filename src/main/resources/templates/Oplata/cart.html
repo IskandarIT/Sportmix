@@ -1,0 +1,50 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>cart</title>-->
+    <!--<link rel='stylesheet' href='/webjars/bootstrap/3.3.6/css/bootstrap.min.css'>-->
+<!--</head>-->
+<!--<a th:href="@{/}" class="btn btn-success btn-xs">Главный</a>-->
+<!--<body>-->
+<!--<div class="container">-->
+    <!--<div class="rows">-->
+        <!--<h3> Добавление  нового карты</h3>-->
+        <!--<h4><span th:utext="${Error}"></span></h4>-->
+        <!--<form autocomplete="off"  class="form-horizontal" th:object="${cart}" th:action="@{/Oplata/cart}" method="post" role="form">-->
+            <!--<table class="table">-->
+                <!--<tr>-->
+                    <!--<td width="120">Имя карты</td>-->
+                    <!--<td width="320">-->
+                        <!--<select class="form-control" aria-describedby="status-addon" th:field="*{cart}">-->
+                            <!--<option th:each="r : ${listCart}"-->
+                                    <!--th:value="${r.id}"-->
+                                    <!--th:text="${r.name}"-->
+                                    <!--th: value="${r.schet}">Status</option>-->
+                        <!--</select>-->
+                    <!--</td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td width="120">Счет карты</td>-->
+                    <!--<td width="320">-->
+                        <!--<input type="text" class="form-control" th:field="*{schet}"/></td>-->
+                    <!--<td></td>-->
+
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>-->
+                    <!--</td>-->
+                    <!--<td><button type="submit" class="btn btn-primary">Добавить</button></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+            <!--</table>-->
+        <!--</form>-->
+
+    <!--</div>-->
+<!--</div>-->
+
+<!--<script src="webjars/jquery/1.9.1/jquery.min.js"></script>-->
+<!--<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->
